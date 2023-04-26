@@ -4,12 +4,9 @@
 % Preamble File - Settings below
 
 % Packages
-\usepackage{amssymb,amsmath,amsthm,amsfonts}
-\usepackage{multicol,multirow}
-\usepackage{calc}
-\usepackage{ifthen}
-\usepackage[margin=0.7cm]{geometry}
-\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage[top=1.75cm, bottom=0.7cm, left=0.7cm, right=0.7cm]{geometry} % Adjust margins as needed
+\usepackage{multicol}
+\usepackage{fancyhdr}
 
 % Settings - Commands etc.
 
@@ -17,5 +14,9 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
-% Remove page numbers
-\pagestyle{empty}
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{"Document-Type"} % Change Document-Type here
+\rhead{"Subject"} % Change Subject here
+\rfoot{\thepage}
